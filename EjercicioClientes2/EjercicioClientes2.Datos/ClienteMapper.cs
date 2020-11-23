@@ -14,7 +14,7 @@ namespace EjercicioClientes2.Datos
     {
         public List<Cliente> GetClientes()
         {
-            string json2 = WebHelper.Get("api/v1/cliente/893746");
+            string json2 = WebHelper.Get("/api/v1/cliente/893746");
             List<Cliente> resultado = MapList(json2);
             return resultado;
         }
@@ -29,7 +29,7 @@ namespace EjercicioClientes2.Datos
         {
             NameValueCollection obj = ReserveMap(cliente);
 
-            string resultado = WebHelper.Post("api/v1/cliente", obj);
+            string resultado = WebHelper.Post("/api/v1/cliente", obj);
 
             ResultadoTransaccion resultadoTransaccion = MapResultado(resultado);
 

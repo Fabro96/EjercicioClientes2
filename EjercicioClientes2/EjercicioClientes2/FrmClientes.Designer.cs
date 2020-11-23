@@ -40,7 +40,7 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblFechaNac = new System.Windows.Forms.Label();
             this.lblActivo = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAgregarCliente = new System.Windows.Forms.Button();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtDNI = new System.Windows.Forms.TextBox();
@@ -64,7 +64,7 @@
             this.panel1.Controls.Add(this.txtDNI);
             this.panel1.Controls.Add(this.txtApellido);
             this.panel1.Controls.Add(this.txtNombre);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnAgregarCliente);
             this.panel1.Controls.Add(this.lblActivo);
             this.panel1.Controls.Add(this.lblFechaNac);
             this.panel1.Controls.Add(this.lblEmail);
@@ -76,7 +76,7 @@
             this.panel1.Controls.Add(this.lblAltaCliente);
             this.panel1.Location = new System.Drawing.Point(24, 24);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(404, 498);
+            this.panel1.Size = new System.Drawing.Size(427, 512);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -85,7 +85,7 @@
             this.panel2.Controls.Add(this.lblListaClientes);
             this.panel2.Location = new System.Drawing.Point(457, 24);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(400, 498);
+            this.panel2.Size = new System.Drawing.Size(400, 512);
             this.panel2.TabIndex = 1;
             // 
             // lblAltaCliente
@@ -188,20 +188,21 @@
             this.lblActivo.TabIndex = 8;
             this.lblActivo.Text = "Activo";
             // 
-            // button1
+            // btnAgregarCliente
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(28, 460);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(356, 35);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Agregar Cliente";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAgregarCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarCliente.Location = new System.Drawing.Point(28, 460);
+            this.btnAgregarCliente.Name = "btnAgregarCliente";
+            this.btnAgregarCliente.Size = new System.Drawing.Size(381, 35);
+            this.btnAgregarCliente.TabIndex = 8;
+            this.btnAgregarCliente.Text = "Agregar Cliente";
+            this.btnAgregarCliente.UseVisualStyleBackColor = true;
+            this.btnAgregarCliente.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(196, 63);
+            this.txtNombre.Location = new System.Drawing.Point(221, 67);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(188, 27);
             this.txtNombre.TabIndex = 0;
@@ -209,7 +210,7 @@
             // txtApellido
             // 
             this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellido.Location = new System.Drawing.Point(196, 113);
+            this.txtApellido.Location = new System.Drawing.Point(221, 117);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(188, 27);
             this.txtApellido.TabIndex = 1;
@@ -217,7 +218,7 @@
             // txtDNI
             // 
             this.txtDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDNI.Location = new System.Drawing.Point(196, 163);
+            this.txtDNI.Location = new System.Drawing.Point(221, 167);
             this.txtDNI.Name = "txtDNI";
             this.txtDNI.Size = new System.Drawing.Size(188, 27);
             this.txtDNI.TabIndex = 2;
@@ -225,7 +226,7 @@
             // txtDireccion
             // 
             this.txtDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccion.Location = new System.Drawing.Point(196, 213);
+            this.txtDireccion.Location = new System.Drawing.Point(221, 217);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(188, 27);
             this.txtDireccion.TabIndex = 3;
@@ -233,7 +234,7 @@
             // txtTelefono
             // 
             this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefono.Location = new System.Drawing.Point(196, 263);
+            this.txtTelefono.Location = new System.Drawing.Point(221, 267);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(188, 27);
             this.txtTelefono.TabIndex = 4;
@@ -241,14 +242,14 @@
             // txtEmail
             // 
             this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(196, 313);
+            this.txtEmail.Location = new System.Drawing.Point(221, 317);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(188, 27);
             this.txtEmail.TabIndex = 5;
             // 
             // dateTimePickerFN
             // 
-            this.dateTimePickerFN.Location = new System.Drawing.Point(196, 367);
+            this.dateTimePickerFN.Location = new System.Drawing.Point(221, 371);
             this.dateTimePickerFN.Name = "dateTimePickerFN";
             this.dateTimePickerFN.Size = new System.Drawing.Size(188, 22);
             this.dateTimePickerFN.TabIndex = 6;
@@ -256,7 +257,7 @@
             // ckbActivo
             // 
             this.ckbActivo.AutoSize = true;
-            this.ckbActivo.Location = new System.Drawing.Point(196, 418);
+            this.ckbActivo.Location = new System.Drawing.Point(221, 422);
             this.ckbActivo.Name = "ckbActivo";
             this.ckbActivo.Size = new System.Drawing.Size(18, 17);
             this.ckbActivo.TabIndex = 7;
@@ -266,7 +267,7 @@
             // 
             this.lstClientes.FormattingEnabled = true;
             this.lstClientes.ItemHeight = 16;
-            this.lstClientes.Location = new System.Drawing.Point(30, 63);
+            this.lstClientes.Location = new System.Drawing.Point(30, 59);
             this.lstClientes.Name = "lstClientes";
             this.lstClientes.Size = new System.Drawing.Size(350, 436);
             this.lstClientes.TabIndex = 9;
@@ -280,6 +281,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FrmClientes";
             this.Text = "FrmClientes";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmClientes_FormClosing);
             this.Load += new System.EventHandler(this.FrmClientes_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -300,7 +302,7 @@
         private System.Windows.Forms.TextBox txtDNI;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtNombre;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAgregarCliente;
         private System.Windows.Forms.Label lblActivo;
         private System.Windows.Forms.Label lblFechaNac;
         private System.Windows.Forms.Label lblEmail;

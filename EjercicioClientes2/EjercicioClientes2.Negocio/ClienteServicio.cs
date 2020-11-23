@@ -33,5 +33,12 @@ namespace EjercicioClientes2.Negocio
                 throw new Exception("Hubo un error en la petición al servicior. Detalle: " + resultado.Error);
 
         }
+
+        public int ProximoId()
+        {
+            List<Cliente> clientes = this.TraerClientes();
+            return clientes.Max(Cliente => Cliente.ID) + 1;
+
+        }
     }
 }

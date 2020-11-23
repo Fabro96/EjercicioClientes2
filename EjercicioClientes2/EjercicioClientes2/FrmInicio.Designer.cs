@@ -1,6 +1,6 @@
 ﻿namespace EjercicioClientes2
 {
-    partial class Form1
+    partial class FrmInicio
     {
         /// <summary>
         /// Required designer variable.
@@ -28,14 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnClientes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Form1
+            // btnClientes
+            // 
+            this.btnClientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClientes.Location = new System.Drawing.Point(261, 70);
+            this.btnClientes.Name = "btnClientes";
+            this.btnClientes.Size = new System.Drawing.Size(280, 37);
+            this.btnClientes.TabIndex = 0;
+            this.btnClientes.Text = "CLIENTES";
+            this.btnClientes.UseVisualStyleBackColor = true;
+            this.btnClientes.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // FrmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Form1";
+            this.Controls.Add(this.btnClientes);
+            this.Name = "FrmInicio";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -43,6 +56,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnClientes;
     }
 }
 

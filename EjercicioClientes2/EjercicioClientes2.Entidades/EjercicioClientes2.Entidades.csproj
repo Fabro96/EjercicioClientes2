@@ -43,6 +43,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cliente.cs" />
+    <Compile Include="Cuenta.cs" />
+    <Compile Include="Exceptions\CamposVaciosClienteException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResultadoTransaccion.cs" />
   </ItemGroup>

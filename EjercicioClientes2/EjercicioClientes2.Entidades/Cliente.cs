@@ -108,7 +108,7 @@ namespace EjercicioClientes2.Entidades
         //MÉTODOS
         public override string ToString()
         {
-            return string.Format("{0} - {1}, {2}", this.ID, this.Apellido, this.Nombre);
+            return string.Format("{0} - {1}, {2}, DNI: {3}", this.ID, this.Apellido, this.Nombre, this.DNI);
         }
     }
 }
