@@ -18,3 +18,4 @@ C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\
 C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioClientes2\EjercicioClientes2\EjercicioClientes2\obj\Debug\EjercicioClientes2.exe
 C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioClientes2\EjercicioClientes2\EjercicioClientes2\obj\Debug\EjercicioClientes2.pdb
 C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioClientes2\EjercicioClientes2\EjercicioClientes2\obj\Debug\EjercicioClientes2.FrmInicio.resources
+C:\Users\Fabrizio\OneDrive\Documentos\Facultad\2020\2C 2020\CAI\Práctica - CAI\EjercicioClientes2\EjercicioClientes2\EjercicioClientes2\obj\Debug\EjercicioClientes2.FrmCuentas.resources

@@ -32,5 +32,12 @@ namespace EjercicioClientes2
             this.Hide();
         }
 
+        private void btnCuentas_Click(object sender, EventArgs e)
+        {
+            FrmCuentas frmCuentas = new FrmCuentas();
+            frmCuentas.Owner = this;
+            frmCuentas.Show();
+            this.Hide();
+        }
     }
 }

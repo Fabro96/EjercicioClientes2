@@ -14,7 +14,7 @@ namespace EjercicioClientes2.Datos
     {
         public Cuenta GetCuenta(int idCliente)
         {
-            string json2 = WebHelper.Get("/api/v1/cuenta" + idCliente.ToString());
+            string json2 = WebHelper.Get("/api/v1/cuenta/" + idCliente.ToString());
             Cuenta resultado = Map(json2);
             return resultado;
         }
@@ -40,7 +40,16 @@ namespace EjercicioClientes2.Datos
         {
             NameValueCollection n = new NameValueCollection();
 
+            n.Add("nroCuenta", cuenta.NroCuenta.ToString());
+            n.Add("descripcion", cuenta.Descripcion);
+            n.Add("saldo", cuenta.Saldo.ToString());
+            n.Add("fechaApertura", cuenta.FechaApertura.ToString());
+            n.Add("fechaModificacion", cuenta.FechaModificatoria.ToString());
+            n.Add("activo", cuenta.Activo.ToString());
+            n.Add("idCliente", cuenta.IdCliente.ToString());
+            n.Add("id", cuenta.Id.ToString());
 
+            return n;
 
         }
 
